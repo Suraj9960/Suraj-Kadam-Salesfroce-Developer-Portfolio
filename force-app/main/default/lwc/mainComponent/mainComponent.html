@@ -1,0 +1,34 @@
+<template>
+        <c-navbar onnavigate={handleNavigate}></c-navbar>
+    
+    
+
+    <div data-section="home">
+         <c-hero-section onnavigate={handleNavigate}></c-hero-section>
+    </div>
+
+    <div data-section="experience">
+        <c-experience-section></c-experience-section>
+    </div>
+
+    <div data-section="projects">
+        <c-project-section></c-project-section>
+    </div>
+
+    <div data-section="skills">
+        <c-skill-section></c-skill-section>
+    </div>
+
+    <div data-section="certifications">
+       <c-certification-section></c-certification-section>
+    </div>
+
+    <div data-section="contact">
+        <c-contact></c-contact>
+    </div>
+
+    <c-footer onnavigate={handleNavigate}></c-footer>
+
+    
+
+</template>

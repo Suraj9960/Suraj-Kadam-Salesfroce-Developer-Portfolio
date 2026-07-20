@@ -1,0 +1,318 @@
+:host{
+    display:block;
+    background:#0d1117;
+    color:white;
+}
+
+.about-section{
+    padding:120px 8%;
+}
+
+.section-header{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.section-tag{
+    color:#00A1E0;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.section-header h2{
+    font-size:44px;
+    margin:20px 0;
+}
+
+.section-header p{
+    color:#9ca3af;
+    max-width:700px;
+    margin:auto;
+    line-height:28px;
+}
+
+.about-container{
+
+    display:grid;
+
+    grid-template-columns:400px 1fr;
+
+    gap:80px;
+
+    align-items:center;
+}
+
+/* LEFT */
+
+.profile-container{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+}
+
+.profile-ring{
+
+    width:320px;
+
+    height:320px;
+
+    border-radius:50%;
+
+    position:absolute;
+
+    background:linear-gradient(45deg,#00A1E0,#6C63FF);
+
+    filter:blur(60px);
+
+    opacity:.4;
+}
+
+.profile-card{
+
+    width:300px;
+
+    height:300px;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    border:5px solid rgba(255,255,255,.15);
+
+    position:relative;
+
+    z-index:2;
+
+    background:#161B22;
+}
+
+.profile-card img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+}
+
+.experience-badge{
+
+    position:absolute;
+
+    bottom:0;
+
+    right:10px;
+
+    background:#161B22;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.1);
+
+    z-index:3;
+}
+
+.experience-badge h3{
+
+    color:#00A1E0;
+
+    margin:0;
+
+    font-size:32px;
+}
+
+.experience-badge span{
+
+    color:#9ca3af;
+
+    font-size:14px;
+}
+
+/* RIGHT */
+
+.content h3{
+
+    font-size:42px;
+
+    margin-bottom:10px;
+}
+
+.content h3 span{
+
+    color:#00A1E0;
+}
+
+.content h4{
+
+    color:#6C63FF;
+
+    margin-bottom:25px;
+}
+
+.content p{
+
+    color:#c7cbd6;
+
+    line-height:30px;
+
+    margin-bottom:20px;
+}
+
+/* Chips */
+
+.chips{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin:40px 0;
+}
+
+.chips span{
+
+    background:#161B22;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    padding:12px 18px;
+
+    border-radius:50px;
+
+    transition:.3s;
+}
+
+.chips span:hover{
+
+    background:#00A1E0;
+
+    transform:translateY(-5px);
+}
+
+/* Cards */
+
+.info-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+    margin-bottom:40px;
+}
+
+.info-card{
+
+    background:#161B22;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    transition:.4s;
+
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.info-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 35px rgba(0,161,224,.25);
+}
+
+.info-card h5{
+
+    color:#00A1E0;
+
+    margin-bottom:8px;
+}
+
+.info-card p{
+
+    margin:0;
+
+    color:white;
+}
+
+/* Buttons */
+
+.buttons{
+
+    display:flex;
+
+    gap:20px;
+}
+
+.buttons a{
+
+    text-decoration:none;
+
+    padding:15px 30px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.primary{
+
+    background:linear-gradient(90deg,#00A1E0,#6C63FF);
+
+    color:white;
+}
+
+.secondary{
+
+    border:2px solid #00A1E0;
+
+    color:white;
+}
+
+.buttons a:hover{
+
+    transform:translateY(-5px);
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.about-container{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+}
+
+.profile-container{
+
+    margin-bottom:50px;
+}
+
+.info-grid{
+
+    grid-template-columns:1fr;
+}
+
+.chips{
+
+    justify-content:center;
+}
+
+.buttons{
+
+    justify-content:center;
+}
+
+}

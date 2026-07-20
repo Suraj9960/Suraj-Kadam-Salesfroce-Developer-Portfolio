@@ -1,0 +1,166 @@
+:host{
+
+    display:block;
+}
+
+/* NAVBAR */
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:22px 10%;
+
+    z-index:1000;
+
+    transition:.4s;
+
+    background:transparent;
+}
+
+/* SCROLL EFFECT */
+
+.scrolled{
+
+    background:rgba(13,17,23,.85);
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:0 5px 25px rgba(0,0,0,.3);
+}
+
+/* LOGO */
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:800;
+
+    color:#00A1E0;
+
+    cursor:pointer;
+
+    letter-spacing:2px;
+}
+
+/* NAV */
+
+nav{
+
+    display:flex;
+
+    gap:40px;
+}
+
+nav a{
+
+    position:relative;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:17px;
+
+    transition:.3s;
+}
+
+/* HOVER */
+
+nav a:hover{
+
+    color:#00A1E0;
+}
+
+/* UNDERLINE */
+
+nav a::after{
+
+    content:'';
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:#00A1E0;
+
+    transition:.3s;
+}
+
+nav a:hover::after{
+
+    width:100%;
+}
+
+/* MOBILE ICON */
+
+.menu-icon{
+
+    display:none;
+
+    color:white;
+
+    font-size:30px;
+
+    cursor:pointer;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+nav{
+
+    position:absolute;
+
+    top:90px;
+
+    right:0;
+
+    width:100%;
+
+    background:#161B22;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    padding:30px 0;
+
+    gap:25px;
+
+    transform:translateY(-150%);
+
+    transition:.4s;
+}
+
+.menu-open{
+
+    transform:translateY(0);
+}
+
+.menu-icon{
+
+    display:block;
+}
+
+}

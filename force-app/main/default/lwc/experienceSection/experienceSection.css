@@ -1,0 +1,834 @@
+:host{
+
+    display:block;
+
+    background:#08131f;
+
+    color:white;
+
+}
+
+/* ==========================================
+   EXPERIENCE SECTION
+========================================== */
+
+.experience-section{
+
+    position:relative;
+
+    padding:120px 8%;
+
+    overflow:hidden;
+
+    background:
+        radial-gradient(circle at top right,
+        rgba(0,161,224,.10),
+        transparent 35%),
+
+        radial-gradient(circle at bottom left,
+        rgba(108,99,255,.08),
+        transparent 40%),
+
+        #08131f;
+
+}
+
+/* ==========================================
+   SECTION HEADER
+========================================== */
+
+.section-header{
+
+    text-align:center;
+
+    margin-bottom:80px;
+
+}
+
+.section-tag{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    border-radius:40px;
+
+    background:rgba(0,161,224,.10);
+
+    border:1px solid rgba(0,161,224,.25);
+
+    color:#00A1E0;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    margin-bottom:25px;
+
+}
+
+.section-header h2{
+
+    font-size:40px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+    color:white;
+
+}
+
+.section-header p{
+
+    max-width:720px;
+
+    margin:auto;
+
+    color:#A1A1AA;
+
+    font-size:18px;
+
+    line-height:32px;
+
+}
+
+/* ==========================================
+   EXPERIENCE CARD
+========================================== */
+
+.experience-card{
+
+    max-width:1200px;
+
+    margin:0 auto 40px;
+
+    padding:40px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.04);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s ease;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+/* Gradient Border Glow */
+
+.experience-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:28px;
+
+    padding:1px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(0,161,224,.35),
+        rgba(108,99,255,.30)
+    );
+
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite:xor;
+
+    mask-composite:exclude;
+
+    pointer-events:none;
+
+}
+
+.experience-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 60px rgba(0,161,224,.18);
+
+}
+
+/* ==========================================
+   TOP SECTION
+========================================== */
+
+.experience-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:40px;
+
+    flex-wrap:wrap;
+
+    gap:25px;
+
+}
+
+/* ==========================================
+   COMPANY INFO
+========================================== */
+
+.company-info{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.company-logo{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    background:linear-gradient(
+        135deg,
+        #00A1E0,
+        #6C63FF
+    );
+
+    box-shadow:0 12px 35px rgba(0,161,224,.25);
+
+}
+
+.company-info h3{
+
+    font-size:25px;
+
+    font-weight:700;
+
+    margin-bottom:8px;
+
+    color:white;
+
+}
+
+.company-info h4{
+
+    font-size:18px;
+
+    color:#00A1E0;
+
+    font-weight:500;
+
+}
+
+/* ==========================================
+   DURATION & LOCATION
+========================================== */
+
+.experience-meta{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-end;
+
+    gap:14px;
+
+}
+
+.duration{
+
+    padding:10px 18px;
+
+    border-radius:30px;
+
+    background:rgba(0,161,224,.12);
+
+    color:#00A1E0;
+
+    font-weight:600;
+
+    font-size:15px;
+
+}
+
+.location{
+
+    padding:10px 18px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.05);
+
+    color:#D1D5DB;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    font-size:15px;
+
+}
+/* ==========================================
+   EXPERIENCE CONTENT
+========================================== */
+
+.experience-content{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:50px;
+
+    align-items:flex-start;
+
+}
+
+/* ==========================================
+   LEFT CONTENT
+========================================== */
+
+.left-content h5,
+.right-content h5{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:#ffffff;
+
+    margin-bottom:22px;
+
+    position:relative;
+
+}
+
+.left-content h5::after,
+.right-content h5::after{
+
+    content:"";
+
+    display:block;
+
+    width:55px;
+
+    height:4px;
+
+    margin-top:10px;
+
+    border-radius:10px;
+
+    background:linear-gradient(
+        90deg,
+        #00A1E0,
+        #6C63FF
+    );
+
+}
+
+/* ==========================================
+   RESPONSIBILITY LIST
+========================================== */
+
+.left-content ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.left-content li{
+
+    position:relative;
+
+    padding-left:38px;
+
+    margin-bottom:22px;
+
+    color:#D1D5DB;
+
+    font-size:16px;
+
+    line-height:30px;
+
+    transition:.3s;
+
+}
+
+/* Custom Icon */
+
+.left-content li::before{
+
+    content:"✔";
+
+    position:absolute;
+
+    left:0;
+
+    top:2px;
+
+    width:24px;
+
+    height:24px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        #00A1E0,
+        #6C63FF
+    );
+
+    color:white;
+
+    font-size:12px;
+
+    font-weight:bold;
+
+}
+
+.left-content li:hover{
+
+    color:#ffffff;
+
+    transform:translateX(8px);
+
+}
+
+/* ==========================================
+   TECHNOLOGY STACK
+========================================== */
+
+.tech-stack{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+}
+
+.tech-stack span{
+
+    padding:12px 18px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:#00A1E0;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    cursor:default;
+
+}
+
+.tech-stack span:hover{
+
+    transform:translateY(-5px);
+
+    background:linear-gradient(
+        135deg,
+        #00A1E0,
+        #6C63FF
+    );
+
+    color:white;
+
+    border-color:transparent;
+
+    box-shadow:0 15px 30px rgba(0,161,224,.25);
+
+}
+
+/* ==========================================
+   EXPERIENCE CARD HOVER EFFECT
+========================================== */
+
+.experience-card:hover .company-logo{
+
+    transform:rotate(8deg) scale(1.08);
+
+    transition:.35s;
+
+}
+
+.experience-card:hover h3{
+
+    color:#00A1E0;
+
+}
+
+.experience-card:hover .duration{
+
+    background:#00A1E0;
+
+    color:white;
+
+}
+/* ==========================================
+   ANIMATIONS
+========================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes pulseGlow{
+
+    0%{
+
+        box-shadow:0 0 0 rgba(0,161,224,0);
+
+    }
+
+    50%{
+
+        box-shadow:0 0 30px rgba(0,161,224,.25);
+
+    }
+
+    100%{
+
+        box-shadow:0 0 0 rgba(0,161,224,0);
+
+    }
+
+}
+
+@keyframes floatCard{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-8px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   CARD ANIMATION
+========================================== */
+
+.experience-card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+.company-logo{
+
+    animation:pulseGlow 4s infinite;
+
+}
+
+.tech-stack span:nth-child(even){
+
+    animation:floatCard 5s ease-in-out infinite;
+
+}
+
+.tech-stack span:nth-child(odd){
+
+    animation:floatCard 6s ease-in-out infinite;
+
+}
+
+/* ==========================================
+   SCROLL MARGIN
+========================================== */
+
+.experience-section{
+
+    scroll-margin-top:90px;
+
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media(max-width:1024px){
+
+.experience-section{
+
+    padding:100px 6%;
+
+}
+
+.section-header h2{
+
+    font-size:42px;
+
+}
+
+.experience-content{
+
+    grid-template-columns:1fr;
+
+    gap:35px;
+
+}
+
+.experience-top{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+.experience-meta{
+
+    align-items:flex-start;
+
+}
+
+.company-info h3{
+
+    font-size:26px;
+
+}
+
+.company-info h4{
+
+    font-size:17px;
+
+}
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:768px){
+
+.experience-section{
+
+    padding:80px 20px;
+
+}
+
+.section-header{
+
+    margin-bottom:60px;
+
+}
+
+.section-header h2{
+
+    font-size:34px;
+
+}
+
+.section-header p{
+
+    font-size:16px;
+
+    line-height:28px;
+
+}
+
+.experience-card{
+
+    padding:25px;
+
+    border-radius:22px;
+
+}
+
+.company-info{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+.company-logo{
+
+    width:60px;
+
+    height:60px;
+
+    font-size:26px;
+
+}
+
+.company-info h3{
+
+    font-size:22px;
+
+}
+
+.company-info h4{
+
+    font-size:16px;
+
+}
+
+.duration,
+
+.location{
+
+    width:100%;
+
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+.left-content h5,
+
+.right-content h5{
+
+    font-size:20px;
+
+}
+
+.left-content li{
+
+    font-size:15px;
+
+    line-height:28px;
+
+}
+
+.tech-stack{
+
+    gap:10px;
+
+}
+
+.tech-stack span{
+
+    font-size:13px;
+
+    padding:10px 14px;
+
+}
+
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media(max-width:480px){
+
+.section-header h2{
+
+    font-size:30px;
+
+}
+
+.company-info h3{
+
+    font-size:20px;
+
+}
+
+.company-info h4{
+
+    font-size:15px;
+
+}
+
+.experience-card{
+
+    padding:20px;
+
+}
+
+.tech-stack{
+
+    justify-content:center;
+
+}
+
+.tech-stack span{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+.left-content li{
+
+    padding-left:32px;
+
+}
+
+}

@@ -1,0 +1,632 @@
+:host{
+
+    display:block;
+
+    background:#08131f;
+
+    color:#fff;
+
+}
+
+/* ===========================================
+   CONTACT SECTION
+=========================================== */
+
+.contact-section{
+
+    position:relative;
+
+    padding:60px 8% 100px;
+
+    overflow:hidden;
+
+    background:
+        radial-gradient(circle at top right,
+        rgba(0,161,224,.12),
+        transparent 35%),
+
+        radial-gradient(circle at bottom left,
+        rgba(108,99,255,.10),
+        transparent 40%),
+
+        #08131f;
+
+}
+
+/* ===========================================
+   HEADER
+=========================================== */
+
+.section-header{
+
+    text-align:center;
+
+    max-width:850px;
+
+    margin:0 auto 55px;
+
+}
+
+.section-tag{
+
+    display:inline-block;
+
+    padding:8px 20px;
+
+    border-radius:30px;
+
+    background:rgba(0,161,224,.12);
+
+    color:#00A1E0;
+
+    border:1px solid rgba(0,161,224,.25);
+
+    font-size:13px;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    margin-bottom:12px;
+
+}
+
+.section-header h2{
+
+    margin:0 0 15px;
+
+    font-size:40px;
+
+    font-weight:700;
+
+    line-height:1.15;
+
+}
+
+.section-header p{
+
+    margin:0 auto;
+
+    max-width:720px;
+
+    color:#9CA3AF;
+
+    font-size:18px;
+
+    line-height:30px;
+
+}
+
+/* ===========================================
+   CONTACT CONTAINER
+=========================================== */
+
+.contact-container{
+
+    display:grid;
+
+    grid-template-columns:1fr 1.2fr;
+
+    gap:40px;
+
+    align-items:start;
+
+}
+/* ===========================================
+   CONTACT INFO CARD
+=========================================== */
+
+.contact-info{
+
+    background:rgba(255,255,255,.04);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:30px;
+
+    padding:40px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+}
+
+/* Gradient Border */
+
+.contact-info::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:30px;
+
+    padding:1px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(0,161,224,.35),
+        rgba(108,99,255,.35));
+
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite:xor;
+
+    mask-composite:exclude;
+
+    pointer-events:none;
+
+}
+
+.contact-info:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 60px rgba(0,161,224,.18);
+
+}
+
+.contact-info h3{
+
+    font-size:30px;
+
+    margin-bottom:15px;
+
+    color:#fff;
+
+}
+
+.contact-info>p{
+
+    color:#9CA3AF;
+
+    line-height:30px;
+
+    margin-bottom:35px;
+
+}
+
+/* ===========================================
+   INFO CARD
+=========================================== */
+
+.info-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:18px;
+
+    margin-bottom:18px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(255,255,255,.06);
+
+    transition:.35s;
+
+}
+
+.info-card:hover{
+
+    background:rgba(0,161,224,.08);
+
+    transform:translateX(8px);
+
+}
+
+.info-card .icon{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:16px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:24px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(0,161,224,.20),
+        rgba(108,99,255,.20));
+
+    border:1px solid rgba(255,255,255,.08);
+
+    flex-shrink:0;
+
+}
+
+.info-card h4{
+
+    font-size:17px;
+
+    margin-bottom:5px;
+
+    color:#fff;
+
+}
+
+.info-card span{
+
+    color:#B8C1CC;
+
+    font-size:15px;
+
+}
+
+/* ===========================================
+   SOCIAL LINKS
+=========================================== */
+
+.social-links{
+
+    display:flex;
+
+    gap:18px;
+
+    margin-top:35px;
+
+}
+
+.social-links a{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:#fff;
+
+    font-size:22px;
+
+    transition:.35s;
+
+}
+
+.social-links a:hover{
+
+    transform:translateY(-8px);
+
+    background:linear-gradient(
+        135deg,
+        #00A1E0,
+        #6C63FF);
+
+    box-shadow:0 18px 35px rgba(0,161,224,.30);
+
+}
+/* ===========================================
+   CONTACT FORM
+=========================================== */
+
+.contact-form{
+
+    background:rgba(255,255,255,.04);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:30px;
+
+    padding:40px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+}
+
+/* Gradient Border */
+
+.contact-form::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:30px;
+
+    padding:1px;
+
+    background:linear-gradient(
+        135deg,
+        rgba(0,161,224,.35),
+        rgba(108,99,255,.35));
+
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite:xor;
+
+    mask-composite:exclude;
+
+    pointer-events:none;
+
+}
+
+.contact-form:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 60px rgba(0,161,224,.18);
+
+}
+
+.contact-form h3{
+
+    font-size:30px;
+
+    margin-bottom:30px;
+
+}
+
+/* ===========================================
+   INPUTS
+=========================================== */
+
+.input-group{
+
+    margin-bottom:22px;
+
+}
+
+.input-group input,
+.input-group textarea{
+
+    width:100%;
+
+    padding:18px 20px;
+
+    border-radius:16px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:rgba(255,255,255,.05);
+
+    color:#fff;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:.35s;
+
+    font-family:inherit;
+
+    box-sizing:border-box;
+
+}
+
+.input-group textarea{
+
+    resize:none;
+
+    min-height:170px;
+
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder{
+
+    color:#9CA3AF;
+
+}
+
+.input-group input:focus,
+.input-group textarea:focus{
+
+    border-color:#00A1E0;
+
+    box-shadow:0 0 20px rgba(0,161,224,.18);
+
+    background:rgba(255,255,255,.07);
+
+}
+
+/* ===========================================
+   BUTTON
+=========================================== */
+
+.send-btn{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:16px;
+
+    cursor:pointer;
+
+    color:#fff;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    background:linear-gradient(
+        135deg,
+        #00A1E0,
+        #6C63FF);
+
+    transition:.35s;
+
+}
+
+.send-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 18px 40px rgba(0,161,224,.35);
+
+}
+
+.send-btn:active{
+
+    transform:scale(.98);
+
+}
+
+/* ===========================================
+   RESPONSIVE
+=========================================== */
+
+@media(max-width:992px){
+
+.contact-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.contact-info,
+.contact-form{
+
+    padding:32px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.contact-section{
+
+    padding:90px 20px;
+
+}
+
+.section-header h2{
+
+    font-size:38px;
+
+}
+
+.section-header p{
+
+    font-size:16px;
+
+    line-height:28px;
+
+}
+
+.contact-info h3,
+.contact-form h3{
+
+    font-size:26px;
+
+}
+
+.info-card{
+
+    padding:16px;
+
+}
+
+.info-card .icon{
+
+    width:52px;
+
+    height:52px;
+
+    font-size:22px;
+
+}
+
+.social-links{
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+}
+
+.send-btn{
+
+    font-size:16px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.section-header h2{
+
+    font-size:30px;
+
+}
+
+.contact-info,
+.contact-form{
+
+    padding:24px;
+
+}
+
+.info-card{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:12px;
+
+}
+
+.info-card .icon{
+
+    width:48px;
+
+    height:48px;
+
+}
+
+.input-group input,
+.input-group textarea{
+
+    padding:16px;
+
+}
+
+}

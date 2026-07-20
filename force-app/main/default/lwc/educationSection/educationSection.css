@@ -1,0 +1,148 @@
+:host{
+    display:block;
+    background:#0d1117;
+    color:#fff;
+}
+
+.education-section{
+    padding:120px 8%;
+}
+
+.section-header{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.section-header span{
+    color:#00A1E0;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.section-header h2{
+    font-size:46px;
+    margin:20px 0;
+}
+
+.section-header p{
+    color:#9ca3af;
+    max-width:700px;
+    margin:auto;
+}
+
+.timeline{
+    max-width:900px;
+    margin:auto;
+    position:relative;
+}
+
+.timeline::before{
+    content:'';
+    position:absolute;
+    left:22px;
+    top:0;
+    width:3px;
+    height:100%;
+    background:#00A1E0;
+}
+
+.education-card{
+    position:relative;
+    padding-left:70px;
+    margin-bottom:60px;
+}
+
+.timeline-dot{
+    position:absolute;
+    left:12px;
+    top:25px;
+    width:22px;
+    height:22px;
+    background:#00A1E0;
+    border-radius:50%;
+    border:4px solid #0d1117;
+    box-shadow:0 0 15px #00A1E0;
+}
+
+.content{
+    background:#161B22;
+    border-radius:20px;
+    padding:35px;
+    border:1px solid rgba(255,255,255,.08);
+    transition:.35s;
+}
+
+.content:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(0,161,224,.25);
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-bottom:20px;
+}
+
+.header h3{
+    color:#00A1E0;
+    margin-bottom:5px;
+}
+
+.header h4{
+    color:#d1d5db;
+    font-weight:400;
+}
+
+.year{
+    background:rgba(0,161,224,.15);
+    color:#00A1E0;
+    padding:8px 18px;
+    border-radius:30px;
+}
+
+.content h5{
+    margin-bottom:15px;
+    color:#fff;
+    font-size:18px;
+}
+
+.content p{
+    color:#c7cbd6;
+    line-height:28px;
+}
+
+.highlights{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:25px;
+}
+
+.highlights span{
+    background:#20262F;
+    color:#00A1E0;
+    padding:10px 16px;
+    border-radius:25px;
+}
+
+@media(max-width:768px){
+
+.header{
+    flex-direction:column;
+    gap:15px;
+}
+
+.education-card{
+    padding-left:50px;
+}
+
+.timeline::before{
+    left:10px;
+}
+
+.timeline-dot{
+    left:0;
+}
+
+}
