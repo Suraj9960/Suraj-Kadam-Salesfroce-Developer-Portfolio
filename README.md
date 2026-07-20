@@ -2,7 +2,7 @@
 
 A modern, responsive, and interactive personal portfolio website built entirely on the **Salesforce Platform** using **Lightning Web Components (LWC)** and **Apex**. This portfolio showcases my professional experience, technical skills, certifications, projects, and achievements as a Salesforce Developer.
 
-🌐 **Live Portfolio:** https://lnkd.in/guZaeUbK
+🌐 **Live Portfolio:** https://orgfarm-d3f36900dc-dev-ed.develop.my.site.com/portfolio
 
 ---
 
@@ -168,7 +168,7 @@ sf project deploy start
 ## 📬 Connect With Me
 
 🌐 Portfolio  
-https://lnkd.in/guZaeUbK
+https://orgfarm-d3f36900dc-dev-ed.develop.my.site.com/portfolio
 
 💼 LinkedIn  
 https://www.linkedin.com/in/surajkadam45/
